@@ -6,9 +6,9 @@ module Jekyll
     end
 
     def render(context)
-        code = super.to_s.gsub(%r{\A(\n|\r)+|(\n|\r)+\z}, "")
-        value = `SplashHTMLGen '#{code}'`
-        v = "<pre><code>#{value}</code></pre>"
+        input = super.to_s.gsub(%r{\A(\n|\r)+|(\n|\r)+\z}, "")
+        code = `SplashHTMLGen '#{input}'`
+        output = "<pre><code>#{code}</code></pre>"
     end
   end
 end
