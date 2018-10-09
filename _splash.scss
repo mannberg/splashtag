@@ -1,0 +1,60 @@
+/**
+ *  Example CSS file that can be used to style Splash HTML output
+ *  Copyright (c) John Sundell 2018
+ *  MIT license - see LICENSE.md
+ */
+
+pre {
+    margin-bottom: 1.5em;
+    background-color: #1a1a1a;
+    padding: 16px 0;
+    border-radius: 16px;
+}
+
+pre code {
+    background-color: #1a1a1a;
+    font-family: monospace;
+    display: block;
+    padding: 0 20px;
+    color: #fff;
+    line-height: 1.4em;
+    font-size: 0.95em;
+    overflow-x: auto;
+    white-space: pre;
+}
+
+pre code .keyword {
+    color: #fd7cb2;
+}
+
+pre code .type {
+    color: #8ed1c3;
+}
+
+pre code .call {
+    color: #fff;
+}
+
+pre code .property {
+    color: #fff;
+}
+
+pre code .number {
+    color: #db6f57;
+}
+
+pre code .string {
+    color: #fd8273;
+}
+
+pre code .comment {
+    color: #6b8a94;
+}
+
+pre code .dotAccess {
+    color: #92b300;
+}
+
+pre code .preprocessing {
+    color: #fba15e;
+}
