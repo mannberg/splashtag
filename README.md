@@ -19,8 +19,6 @@ This is a custom liquid tag for using John Sundell's excellent Swift syntax high
 ### Usage
 
 ```
-Swift is a great language
-
 {% splash %}
 guard let user = User(name: "Dohn Joe", emailAddress: validAddress) else {
     return
