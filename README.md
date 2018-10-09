@@ -9,8 +9,11 @@ This is a custom liquid tag for using John Sundell's excellent Swift syntax high
 ### Installation
 
 + Put the splashtag.rb file in the _plugins folder of your Jekyll repository
+
 ```_plugins/splashtag.rb```
+
 + Put the _splash.css file in the _sass folder of your Jekyll repository
+
 ```_sass/_splash.css```
 
 ### Usage
