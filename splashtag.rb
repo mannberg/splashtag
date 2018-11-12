@@ -1,3 +1,5 @@
+require "shellwords"
+
 module Jekyll
   class SplashTag < Liquid::Block
 
@@ -7,8 +9,9 @@ module Jekyll
 
     def render(context)
         input = super.to_s.gsub(%r{\A(\n|\r)+|(\n|\r)+\z}, "")
-        code = `SplashHTMLGen '#{input}'`
-        output = "<pre><code>#{code}</code></pre>"
+        command = Shellwords.join(['SplashHTMLGen', input])
+        code = `#{command}`
+        output = "<pre class=\"splash\"><code>#{code}</code></pre>"
     end
   end
 end
